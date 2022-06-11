@@ -1,0 +1,49 @@
+@extends('templates.home')
+@section('navbar')
+@include('include.home.navbar_biru')
+@endsection
+@section('main')
+
+ <div class="body-divisi">
+          <div class="container pt-3">
+              <div class="divisi pt-5 pb-5">
+                      <div class="row divisi-full-hd">
+                          <div class="col col-sm-6 col-md-6 col-xxl-4 img-1 text-center">
+                              <img class="gambar-divisi-page" src="{{$division->image()}}">
+                              <h4 class="mt-4 mx-auto judul-icon-divisi" style="text-transform: uppercase;">{{$division->name}}</h4>
+                              <div class="row text-center">
+                              <div class="d-flex img-diff">
+                                  <img src="{{asset('home_page')}}/img/beginner.png" class="ml-auto">
+                                  <img src="{{asset('home_page')}}/img/intermediate.png" class="mx-3">
+                                  <img src="{{asset('home_page')}}/img/expert.png" class="mr-auto">
+                              </div>
+                              </div>
+                          </div>
+  
+                          <div class="col col-sm-6 col-md-6 col-xxl-8">
+                              <div class="judul">
+                                  <h2>Divisi {{$division->name}}<span><img  src="{{asset('home_page/img/icon_titik.png')}}" class=" mx-1"></span></h2>
+                              </div>
+                              <p class="down-delay-1 deskripsi-divisi" style="word-wrap: break-word;text-align: justify;text-justify: inter-word;">
+                           {!! $division->content !!}
+                        </p>
+  
+                              <div class="materi">
+                                <div class="owl-carousel owl-theme owl-multimedia" id="bebas">
+                                  @foreach($imageDivision as $images)
+                                      <div class="item-owl p-3"><img src="{{$images->image()}}"></div>
+                                  @endforeach
+  
+                                </div>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+              </div>
+          </div>
+          
+@endsection
+
+@section('footer')
+@include('include.home.footer_putih')
+@endsection
