@@ -4,7 +4,7 @@ use App\Models\Division;
 
   <!-- navbar -->
      <div class="index-nav">
-        <nav class="navbar navbar-expand-lg fixed-top navbar-dark py-4 bg-transparent">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark py-2 bg-transparent">
             <div class="container">
                  <a class="navbar-brand" href="{{route('home')}}"><img src="{{asset('home_page/img/logo.png')}}" class="w-75 mt-1"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">

@@ -7,7 +7,7 @@ use App\Models\Division;
         <div class="navbar-meta nav-meta">
             <nav class="navbar navbar-expand-lg navbar-dark py-2">
                 <div class="container">
-                     <a class="navbar-brand" href="{{route('home')}}"><img src="{{asset('home_page/img/logo_putih.png')}}" class="w-75 mt-1"></a>
+                     <a class="navbar-brand logo-putih" href="{{route('home')}}"><img src="{{asset('home_page/img/logo_putih.png')}}" class="mt-1"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="fas fa-bars"></span>
                     </button>
