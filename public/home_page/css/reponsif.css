@@ -100,6 +100,9 @@
     .navbar-brand img{
         width: 30% !important;
     }
+    .navbar-brand.logo-putih img{
+        width: 90% !important;
+    }
     
     /*iqi new one*/
     .deskripsi-tentang {
@@ -245,6 +248,9 @@
     .berita .card-body{
         height: 18rem;
     }
+    .navbar-brand.logo-putih img{
+      width: 90% !important;
+    }
 }
 
 /* 
@@ -272,6 +278,9 @@
     .navbar-brand img{
         width: 30% !important;
         margin-left: 0rem;
+    }
+    .navbar-brand.logo-putih img{
+      width: 90% !important;
     }
 }
 
@@ -366,6 +375,9 @@
     max-height: 145px;
     min-width: 201px;
     min-height: 145px;
+  }
+  .navbar-brand.logo-putih img{
+    width: 90% !important;
   }
   /* end of rian commit */
 }
@@ -491,6 +503,9 @@
 
   .deskripsi-tentang {
     margin-bottom: 30px;
+  }
+  .navbar-brand.logo-putih img{
+    width: 90% !important;
   }
 }
 
@@ -972,6 +987,9 @@
   }
   .navbar-brand{
       width: 50%;
+  }
+  .navbar-brand.logo-putih img{
+    width: 90% !important;
   }
 }
 

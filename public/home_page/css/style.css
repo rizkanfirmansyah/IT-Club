@@ -22,6 +22,7 @@ a {
     background-size: cover;
     height: 100vh;
     max-height: 768px;
+    background-position-y: -1px;
 }
 
 .hero-text {
@@ -368,6 +369,7 @@ p .tanggal {
     max-height: 256px;
     min-width: 353px;
     min-height: 256px;
+    object-fit: cover;
 }
 .breadcrumb {
     padding-left: 0rem;
