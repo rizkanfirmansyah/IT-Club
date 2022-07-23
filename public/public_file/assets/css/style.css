@@ -4135,8 +4135,9 @@ body:not(.sidebar-mini)
 }
 
 .login-logo {
-    margin-left: 35% !important;
-    margin-right: 35% !important;
+    /* margin-left: 35% !important;
+    margin-right: 35% !important; */
+    width: 80%;
 }
 
 @media (max-width: 480px) {

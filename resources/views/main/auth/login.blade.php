@@ -7,10 +7,10 @@
       <div class="d-flex flex-wrap align-items-stretch">
         <div class="col-lg-5 col-md-6 col-12 order-lg-1 min-vh-100 order-2 bg-white">
 
-          <img src="{{asset('home_page/img/logo.png')}}" alt="" class="mt-5 login-logo">
           <div class="bg-login">
             <div class="px-md-4 mx-md-3 my-2">
-
+              
+              <img src="{{asset('home_page/img/logo.png')}}" alt="" class="mt-5 login-logo pl-5 ml-2">
 
               {{-- <img src="/public_file/assets/img/stisla-fill.svg" alt="logo" width="80" class="shadow-light rounded-circle mb-5 mt-2"> --}}
               <h2 class="mt-4 text-center text-dark font-weight-normal">Welcome to <span class="font-weight-bold">IT Club</span></h2>
