@@ -54,6 +54,7 @@
 /* 3. Bootstrap Override */
 /* 3.1 Misc */
 @import url("//fonts.googleapis.com/css?family=Nunito:400,600,700,800");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 .btn:focus,
 .btn:active,
 .btn:active:focus,
@@ -4139,6 +4140,116 @@ body:not(.sidebar-mini)
     margin-right: 35% !important; */
     width: 80%;
 }
+
+/* login jacol */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #FAF8F9;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.bg-login img {
+    height: 100vh;
+    width: 100%;
+    padding: 0%;
+    object-fit: cover;
+}
+
+.bg-login {
+    padding: 0%;
+}
+
+.form-login {
+    display: flex;
+    justify-content: center;
+    background-image: url(../../../home_page/img/bg-form.png);
+    background-size: 100% 100%;
+    padding: unset;
+}
+
+.form-isi {
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
+}
+
+.form-login h2 {
+    font-family: "Poppins";
+    font-weight: bolder;
+    font-size: 36px;
+}
+
+.form-login p {
+    font-family: "Noto sans";
+    color: #121212;
+    font-size: 20px;
+    opacity: calc(70%);
+}
+
+.form-isi .form-check a {
+    text-decoration: none;
+    color: #121212;
+    font-family: "Poppins";
+    font-size: 12px;
+}
+
+.form-isi a {
+    text-decoration: none;
+}
+
+.form-isi button {
+    font-family: "Poppins";
+    border-radius: 10px;
+}
+
+.form-control {
+    border-radius: 10px;
+    background-color: #E9EFF6;
+}
+
+.form-content span{
+    background-color: #E9EFF6 !important;
+}
+
+.form-content p {
+    font-family: "Poppins" !important;
+    font-size: 13px;
+    opacity: calc(70%);
+    border-bottom: 2px solid #D2D7DC; 
+   line-height: 0.1em;
+   margin: 10px 0 20px;
+}
+
+.line-kuning {
+    border-bottom: 3px solid #FFB93C; 
+    line-height: 0.4em;
+    display: inline-table;
+}
+
+.form-content p span {
+    background:#fff; 
+    padding:0 0px; 
+    background-color: #fff !important;
+}
+
+.another-login {
+    display: flex;
+    justify-content: center;
+}
+.another-login button {
+    border-color:#D2D7DC;
+}
+
+.another-login img {
+    width: 40px;
+    height: 40px;
+}
+
+/* end of login jacol */
 
 @media (max-width: 480px) {
     .login-logo {

@@ -3,81 +3,44 @@
 @section('main')
 
 <div id="app">
-    <section class="section">
-      <div class="d-flex flex-wrap align-items-stretch">
-        <div class="col-lg-5 col-md-6 col-12 order-lg-1 min-vh-100 order-2 bg-white">
-
-          <div class="bg-login">
-            <div class="px-md-4 mx-md-3 my-2">
-              
-              <img src="{{asset('home_page/img/logo.png')}}" alt="" class="mt-5 login-logo pl-5 ml-2">
-
-              {{-- <img src="/public_file/assets/img/stisla-fill.svg" alt="logo" width="80" class="shadow-light rounded-circle mb-5 mt-2"> --}}
-              <h2 class="mt-4 text-center text-dark font-weight-normal">Welcome to <span class="font-weight-bold">IT Club</span></h2>
-              <p class="text-muted text-center mb-3">Before you get started, you must login or register if you don't already have an account.</p>
-              <div id="message"></div>
-              <form method="POST" action="#" class="needs-validation" novalidate="" id="login">
-                <div class="form-group">
-                  <label for="email">Username/Email</label>
-                  <input id="username" type="text" class="form-control" name="username" tabindex="1" required autofocus autocomplete>
-                  <div class="invalid-feedback">
-                    Please fill in your email
-                  </div>
-                </div>
-  
-                <div class="form-group">
-                  <div class="d-block">
-                    <label for="password" class="control-label">Password</label>
-                  </div>
-                  <div class="input-group mb-3">
-                      <input id="password" type="password" class="form-control" name="password" tabindex="2" required>
-                      <div class="input-group-append" >
-                        <button class="btn btn-primary" id="seePassword" type="button"><i class="fas fa-eye-slash"></i></button>
-                      </div>
-                    </div>
-                  <div class="invalid-feedback">
-                    please fill in your password
-                  </div>
-                </div>
-  
-                <div class="form-group">
-                  <div class="custom-control custom-checkbox">
-                    <input type="checkbox" name="remember" class="custom-control-input" tabindex="3" id="remember-me">
-                    <label class="custom-control-label" for="remember-me">Remember Me</label>
-                  </div>
-                </div>
-  
-                <div class="form-group text-right">
-                  <a href="/auth/forgotpassword" class="float-left mt-3">
-                    Forgot Password?
-                  </a>
-                  <button type="submit" class="btn btn-primary btn-lg btn-icon icon-right" tabindex="4">
-                    Login
-                  </button>
-                </div>
-  
-                <div class="mt-5 text-center">
-                  Don't have an account? <a href="/auth/register">Create new user</a>
-                </div>
-              </form>
-  
-              
-              
-            </div>
-          </div>
+    <section class="section-login" style="bottom: 0%;">
+      <div class="row">
+        <div class="bg-login col-sm-6">
+            <img src="{{asset('home_page/img/bg-login.png')}}" alt="">
         </div>
-        <div class="d-none d-lg-block d-md-block col-lg-7 col-12 order-lg-2 order-1 min-vh-100 background-walk-y position-relative overlay-gradient-bottom" data-background="/public_file/assets/img/unsplash/login-bg.jpg">
-          <div class="absolute-bottom-left index-2">
-            <div class="text-light p-5 pb-2">
-              <div class="mb-5 pb-3">
-                <h1 class="mb-2 display-4 font-weight-bold">Good Morning</h1>
-                <h5 class="font-weight-normal text-muted-transparent">Bandung, Indonesia</h5>
-              </div>
-              Photo by <a class="text-light bb" target="_blank" href="https://rizkanfirmansyah.rf.gd">Rizkan Firmansyah</a>
+        <div class="form-login col-sm-6">
+            <div class="form-isi w-50">
+                <div class="welcome">
+                    <h2>Selamat Datang, <br><span class="line-kuning">Pahlawan</span> !</h2>
+                    <p class="mt-3">Petualangan baru telah menunggu<br>untuk kamu jelajahi</p>
+                    <form class="mt-5 form-content" method="POST" action="#" class="needs-validation" novalidate="" id="login">
+                        <div class="input-group mb-3 shadow-sm">
+                            <span class="input-group-text p-2 border-0" id="basic-addon1"><i
+                                    class="fas fa-user"></i></span>
+                            <input id="username" type="text" name="username" tabindex="1" required autofocus autocomplete class="form-control border-0 p-2" placeholder="Masukan Email"
+                                aria-label="Belajar mewarnai" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3 shadow-sm">
+                            <span class="input-group-text p-2 border-0" id="basic-addon1"><i
+                                    class="fas fa-lock"></i></span>
+                            <input input id="password" type="password" name="password" tabindex="2" required required class="form-control border-0 p-2" placeholder="Masukan Kata Sandi"
+                                aria-label="Belajar mewarnai" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="mb-3 form-check" style="float:right;">
+                          <label class="form-check-label text-decoration-none" for="exampleCheck1"><a href="/auth/forgotpassword">Lupa Kata Sandi</a></label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Masuk</button>
+                        <p class="mt-4 text-center"><span>ㅤAtau Masuk Menggunakanㅤ</span></p>
+                        <div class="another-login ">
+                            <button class="btn bg-white mx-2"><img src="{{asset('home_page/img/facebook.png')}}" alt=""></button>
+                            <button class="btn bg-white mx-2"><img src="{{asset('home_page/img/google.png')}}" alt=""></button>
+                        </div>
+                      </form>
+                      <p class="text-center mt-3">Belum punya akun ? <a href="/auth/register">Daftar Sekarang</a></p>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
     </section>
   </div>
 
