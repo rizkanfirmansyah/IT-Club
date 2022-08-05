@@ -5,8 +5,8 @@
 <div id="app">
     <section class="section-login" style="bottom: 0%;">
       <div class="row">
-        <div class="bg-login col-sm-6">
-            <img src="{{asset('home_page/img/bg-login.png')}}" alt="">
+        <div class="bg-login col-sm-6 min-vh-100 background-walk-y position-relative overlay-gradient-bottom" data-background="/public_file/assets/img/unsplash/login-bg.jpg">
+            {{-- <img src="/public_file/assets/img/unsplash/login-bg.jpg" alt=""> --}}
         </div>
         <div class="form-login col-sm-6">
             <div class="form-isi w-50">
@@ -30,11 +30,11 @@
                           <label class="form-check-label text-decoration-none" for="exampleCheck1"><a href="/auth/forgotpassword">Lupa Kata Sandi</a></label>
                         </div>
                         <button type="submit" class="btn btn-primary w-100">Masuk</button>
-                        <p class="mt-4 text-center"><span>ㅤAtau Masuk Menggunakanㅤ</span></p>
+                        {{-- <p class="mt-4 text-center"><span>ㅤAtau Masuk Menggunakanㅤ</span></p>
                         <div class="another-login ">
                             <button class="btn bg-white mx-2"><img src="{{asset('home_page/img/facebook.png')}}" alt=""></button>
                             <button class="btn bg-white mx-2"><img src="{{asset('home_page/img/google.png')}}" alt=""></button>
-                        </div>
+                        </div> --}}
                       </form>
                       <p class="text-center mt-3">Belum punya akun ? <a href="/auth/register">Daftar Sekarang</a></p>
                 </div>
