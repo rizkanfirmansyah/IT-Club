@@ -3,77 +3,49 @@
 @section('main')
 <body>
     <div id="app">
-    <section class="section">
-      <div class="container mt-5">
-          <div class="row">
-              <div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
-                  <div class="card card-primary">
-              <div class="card-header"><h4>Register</h4></div>
-
-
-              <div class="card-body">
-                  <div id="message"></div>
-                  <form method="POST" id="register">
-                      <div class="row">
-                    <div class="form-group col-6">
-                        <label for="first_name">Username</label>
-                        <input id="first_name" type="text" class="form-control" name="name" autofocus>
-                    </div>
-                    <div class="form-group col-6">
-                        <label for="email">Email</label>
-                        <input id="email" type="email" class="form-control" name="email">
-                        <div class="invalid-feedback">
-                        </div>
-                    </div>
-                </div>
-
-                  <div class="row">
-                      <div class="form-group col-6">
-                          <label for="password" class="d-block">Password</label>
-                          <div class="input-group mb-3">
-                            <input id="password" type="password" class="form-control pwstrength" data-indicator="pwindicator" name="password">
-                            <div class="input-group-append">
-                              <button class="btn btn-primary" id="seePassword" type="button"><i class="fas fa-eye-slash"></i></button>
-                            </div>
+      <section class="section-login" style="bottom: 0%;">
+        <div class="row">
+          <div class="bg-login col-sm-6 min-vh-100 background-walk-y position-relative overlay-gradient-bottom" data-background="/public_file/assets/img/unsplash/login-bg.jpg">
+              {{-- <img src="{{asset('home_page/img/bg-login.png')}}" alt=""> --}}
+          </div>
+          <div class="form-login col-sm-6">
+              <div class="form-isi w-50">
+                  <div class="welcome">
+                      <h2>Selamat Datang, <br><span class="line-kuning">Pahlawan</span> !</h2>
+                      <p class="mt-3">Petualangan baru telah menunggu<br>untuk kamu jelajahi</p>
+                      <form class="mt-5 form-content" method="POST" action="#" class="needs-validation" novalidate="" id="register">
+                          <div class="input-group mb-3 shadow-sm">
+                              <span class="input-group-text p-2 border-0" id="basic-addon1"><i
+                                      class="fas fa-user"></i></span>
+                              <input id="first_name" type="text" name="name" tabindex="1" required autofocus autocomplete class="form-control border-0 p-2" placeholder="Masukan Username"
+                                  aria-label="Belajar mewarnai" aria-describedby="basic-addon1">
                           </div>
-                          <div id="pwindicator" class="pwindicator">
-                              <div class="bar"></div>
-                        <div class="label"></div>
-                    </div>
-                </div>
-                <div class="form-group col-6">
-                    <label for="password2" class="d-block">Password Confirmation</label>
-                    <input id="password2" type="password" class="form-control">
-                    </div>
-                </div>
-
-
-                  <div class="form-group">
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" name="agree" class="custom-control-input" id="agree">
-                      <label class="custom-control-label" for="agree">I agree with the terms and conditions</label>
-                    </div>
+                          <div class="input-group mb-3 shadow-sm">
+                              <span class="input-group-text p-2 border-0" id="basic-addon1"><i
+                                      class="fas fa-envelope"></i></span>
+                              <input id="username" type="text" name="username" tabindex="1" required autofocus autocomplete class="form-control border-0 p-2" placeholder="Masukan Email"
+                                  aria-label="Belajar mewarnai" aria-describedby="basic-addon1">
+                          </div>
+                          <div class="input-group mb-3 shadow-sm">
+                              <span class="input-group-text p-2 border-0" id="basic-addon1"><i
+                                      class="fas fa-lock"></i></span>
+                              <input input id="password" type="password" name="password" tabindex="2" required required class="form-control border-0 p-2" placeholder="Masukan Kata Sandi"
+                                  aria-label="Belajar mewarnai" aria-describedby="basic-addon1">
+                          </div>
+                          <div class="input-group mb-3 shadow-sm">
+                              <span class="input-group-text p-2 border-0" id="basic-addon1"><i
+                                      class="fas fa-lock"></i></span>
+                              <input input id="password" type="password" name="password" tabindex="2" required required class="form-control border-0 p-2" placeholder="Konfirmasi Kata Sandi"
+                                  aria-label="Belajar mewarnai" aria-describedby="basic-addon1">
+                          </div>
+                          <button type="submit" class="btn btn-primary w-100">Register</button>
+                        </form>
+                        <p class="text-center mt-3">Sudah punya akun ? <a href="/auth/login">Login</a></p>
                   </div>
-
-                  <div class="form-group">
-                    <button type="submit" class="btn btn-primary btn-lg btn-block">
-                      Register
-                    </button>
-                  </div>
-                </form>
-                <div class="text-center">
-                    Do you have account <a href="/auth/login">Login</a>
-                </div>
-            </div>
-            </div>
-
-            <div class="simple-footer">
-                Copyright &copy; ITClub 2021
-            </div>
-        </div>
-    </div>
-</div>
-</section>
+              </div>
+          </div>
+      </div>
+      </section>
 </div>
 
     @endsection

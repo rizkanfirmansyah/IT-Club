@@ -15,7 +15,8 @@
 
   <!-- Template CSS -->
   <link rel="stylesheet" href="/public_file/assets/css/style.css">
-  <link rel="stylesheet" href="/public_file/assets/css/components.css">
+  <link rel="stylesheet" href="/public_file/assets/css/responsive-desktop.css">
+  {{-- <link rel="stylesheet" href="/public_file/assets/css/components.css"> --}}
 </head>
 
 
