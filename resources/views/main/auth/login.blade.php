@@ -5,10 +5,10 @@
 <div id="app">
     <section class="section-login" style="bottom: 0%;">
       <div class="row">
-        <div class="bg-login col-sm-6 min-vh-100 background-walk-y position-relative overlay-gradient-bottom" data-background="/public_file/assets/img/unsplash/login-bg.jpg">
+        <div class="bg-login col-sm-6 min-vh-100 d-none d-lg-block d-xl-block d-xxl-block background-walk-y position-relative overlay-gradient-bottom" data-background="/public_file/assets/img/unsplash/login-bg.jpg">
             {{-- <img src="/public_file/assets/img/unsplash/login-bg.jpg" alt=""> --}}
         </div>
-        <div class="form-login col-sm-6">
+        <div class="form-login col-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
             <div class="form-isi w-50">
                 <div class="welcome">
                     <h2>Selamat Datang, <br><span class="line-kuning">Pahlawan</span> !</h2>

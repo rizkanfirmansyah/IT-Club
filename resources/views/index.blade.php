@@ -48,7 +48,7 @@
                     <p>Divisi Networking</p>
                   </div>
                   <div class="col-md-4 down-delay-2">
-                    <img src="{{asset('home_page/img/riezkan.jpg')}}" class="mb-3 rounded-circle w-100">
+                    <img src="https://images.spr.so/cdn-cgi/imagedelivery/j42No7y-dcokJuNgXeA0ig/271b878a-7690-46f1-a249-db2e6f2b6bbf/rizkan_1/w=1920,quality=1000" class="mb-3 rounded-circle w-100">
                     <h5 class="mb-0">Riezkan Aprianda F.</h5>
                     <p>Divisi Programming</p>
                   </div>

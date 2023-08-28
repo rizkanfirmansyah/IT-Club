@@ -207,6 +207,7 @@ function uriSegment()
     $data = url()->full();
     $link  = preg_split('/(:|-|0|com|\*|=)/', $data);
     $url = end($link);
+    $url = str_replace('//itclub5.my.id', '', $url);
     $uri = explode('/', $url);
 
     if (count($uri) <= 3) {
